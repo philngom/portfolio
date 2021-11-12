@@ -1,0 +1,95 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#profile-pic {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  margin: 0 20px;
+  box-shadow: 5px 5px 30px orangered;
+}
+
+body {
+  background-image: url(./images/background.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(3px);
+  grid-template-rows: 1fr 9fr 1fr;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  background: rgba(0, 0, 0, 0.2);
+  /* box-shadow: 3px 3px 40px orangered; */
+  padding: 20px 0;
+
+}
+
+p {
+  color: orangered;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 32px;
+}
+
+nav {
+  display: block;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 0;
+}
+
+.logo {
+  margin: 5px 20px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+#about-me p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orangered; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+} */
