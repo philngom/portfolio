@@ -38,6 +38,7 @@ main {
   align-items: center;
   background: rgba(0, 0, 0, 0.2);
   padding: 20px 0;
+  width: 100vw;
 
 }
 
@@ -46,12 +47,12 @@ p {
   font-size: 2rem;
   font-weight: 900;
   text-align: center;
-  line-height: 32px;
+  line-height: 40px;
 }
 
-nav {
-  display: block;
-}
+/* nav {
+  display: inline-block;
+} */
 
 footer {
   display: flex;
@@ -67,5 +68,9 @@ footer {
 
 .logo:hover {
   cursor: pointer;
+}
+
+ul {
+  display: inline-block;
 }
 
