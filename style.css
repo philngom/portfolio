@@ -18,6 +18,7 @@ html, body {
 }
 
 body {
+  display: grid;
   background-image: url(./images/background.JPG);
   background-size: cover;
   background-repeat: no-repeat;
