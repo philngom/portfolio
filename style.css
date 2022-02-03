@@ -24,7 +24,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   backdrop-filter: blur(3px);
-  grid-template-rows: 1fr 9fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 
 main {
@@ -74,4 +74,9 @@ footer {
 ul {
   display: inline-block;
 }
+
+/* .animation {
+  animation: typewriter 4s steps(character count) 1s 1 normal both,
+  blinkCursor 500ms steps(character count) infinite normal;
+} */
 
